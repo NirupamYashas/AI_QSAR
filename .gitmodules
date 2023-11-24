@@ -1,0 +1,6 @@
+[submodule "django"]
+	path = django
+	url = https://github.com/NirupamYashas/AI_QSAR_Backend.git
+[submodule "react"]
+	path = react
+	url = https://github.com/NirupamYashas/AI_QSAR_Frontend.git
