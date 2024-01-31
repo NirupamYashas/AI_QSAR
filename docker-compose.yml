@@ -24,7 +24,7 @@ services:
       context: django 
       dockerfile: Dockerfile
     ports:  #outside:inside(container)
-      - 8000:8000
+      - 7000:7000
     networks:
       - shared-network
 
@@ -36,9 +36,7 @@ services:
       context: react
       dockerfile: Dockerfile
     ports:  #outside:inside(container)
-      - 3000:3000
-    # environment:
-      # - REACT_APP_API_URL=https://localhost/api
+      - 3006:3006
     # volumes:
     #   - ./certs/devopsbyexample-key.pem:/etc/nginx/certs/devopsbyexample-key.pem
     #   - ./certs/devopsbyexample.pem:/etc/nginx/certs/devopsbyexample.pem
